@@ -1,15 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Test') {
+    stage('docker test-build') {
       steps {
-        sh 'mvn test'
-      }
-    }
-
-    stage('Build') {
-      steps {
-        sh 'mvn install'
+        sh 'docker build .'
       }
     }
 
