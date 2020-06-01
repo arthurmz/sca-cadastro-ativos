@@ -1,11 +1,12 @@
 pipeline {
-  agent any
-  stages {
-    stage('test') {
-      steps {
-        echo 'teste'
-      }
-    }
+    agent any
 
-  }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'make check || true' 
+                junit '**/target/*.xml' 
+            }
+        }
+    }
 }
