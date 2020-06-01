@@ -1,12 +1,17 @@
 pipeline {
-    agent any
-
-    stages {
-        stage('Test') {
-            steps {
-                sh 'make check || true' 
-                junit '**/target/*.xml' 
-            }
-        }
+  agent any
+  stages {
+    stage('Test') {
+      steps {
+        sh 'mvn test'
+      }
     }
+
+    stage('Build') {
+      steps {
+        sh 'mvn install'
+      }
+    }
+
+  }
 }
