@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sca</groupId>
-	<artifactId>cadastro-ativos</artifactId>
+	<artifactId>sca-cadastro-ativos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>sca-cadastro-ativos</name>
 	<description>Módulo de cadastro de ativos</description>
@@ -35,6 +35,28 @@
 		    <groupId>org.springdoc</groupId>
 		    <artifactId>springdoc-openapi-ui</artifactId>
 		    <version>1.2.32</version>
+		</dependency>
+		
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+		
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+		
+		<dependency>
+		    <groupId>javax.measure</groupId>
+		    <artifactId>unit-api</artifactId>
+		    <version>1.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>tec.units</groupId>
+		    <artifactId>unit-ri</artifactId>
+		    <version>1.0.3</version>
 		</dependency>
 
 		<dependency>
