@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sca.cadastroativos.ativo.manutencao.model.PeriodicidadeManutencaoAtivo;
+import com.sca.cadastroativos.model.manutencao.PeriodicidadeManutencaoAtivo;
 import com.sca.cadastroativos.repository.PeriodicidadeManutencaoAtivoRepository;
 import com.sca.cadastroativos.service.PeriodicidadeManutencaoAtivoService;
 

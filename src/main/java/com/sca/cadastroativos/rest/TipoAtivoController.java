@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sca.cadastroativos.ativo.model.TipoAtivo;
+import com.sca.cadastroativos.model.ativo.TipoAtivo;
 import com.sca.cadastroativos.repository.TipoAtivoRepository;
 import com.sca.cadastroativos.service.TipoAtivoService;
 

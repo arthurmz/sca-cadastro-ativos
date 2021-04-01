@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sca.cadastroativos.insumo.model.InsumoDisponivel;
+import com.sca.cadastroativos.model.insumo.InsumoDisponivel;
 import com.sca.cadastroativos.repository.InsumoDisponivelRepository;
 import com.sca.cadastroativos.service.InsumoDisponivelService;
 

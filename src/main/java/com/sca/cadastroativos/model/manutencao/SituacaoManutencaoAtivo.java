@@ -1,4 +1,4 @@
-package com.sca.cadastroativos.ativo.manutencao.model;
+package com.sca.cadastroativos.model.manutencao;
 
 public enum SituacaoManutencaoAtivo {
 	PLANEJADO,

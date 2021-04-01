@@ -1,4 +1,4 @@
-package com.sca.cadastroativos.ativo.model;
+package com.sca.cadastroativos.model.ativo;
 
 import java.time.LocalDateTime;
 
@@ -11,14 +11,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-/**
- * Representa subcomponentes de um tipo de ativo
- * @author arthur
- *
- */
+/**Ativo é todo objeto, equipamento e instalação passível de reutilização e manutenção.
+ * Geralmente são máquinas, ferramentas elétricas, veículos.*/
 @Entity
 @Table(schema="sca_cadastro_ativos")
-public class TipoComponenteManutencaoAtivo {
+public class Ativo {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,10 +24,10 @@ public class TipoComponenteManutencaoAtivo {
 	
 	@ManyToOne
 	@JoinColumn(name="id_tipo_ativo")
-	private TipoAtivo tipoAtivo;
+	private TipoAtivo tipo;
 	
-	@Column(name="descricao")
-	private String descricao;
+	@Column(name="numero_serie")
+	private String numeroSerie;
 	
 	@Column(name="data_cadastro")
 	private LocalDateTime dataCadastro;
@@ -43,20 +40,20 @@ public class TipoComponenteManutencaoAtivo {
 		this.id = id;
 	}
 
-	public TipoAtivo getTipoAtivo() {
-		return tipoAtivo;
+	public TipoAtivo getTipo() {
+		return tipo;
 	}
 
-	public void setTipoAtivo(TipoAtivo tipoAtivo) {
-		this.tipoAtivo = tipoAtivo;
+	public void setTipo(TipoAtivo tipo) {
+		this.tipo = tipo;
 	}
 
-	public String getDescricao() {
-		return descricao;
+	public String getNumeroSerie() {
+		return numeroSerie;
 	}
 
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public void setNumeroSerie(String numeroSerie) {
+		this.numeroSerie = numeroSerie;
 	}
 
 	public LocalDateTime getDataCadastro() {
@@ -66,5 +63,6 @@ public class TipoComponenteManutencaoAtivo {
 	public void setDataCadastro(LocalDateTime dataCadastro) {
 		this.dataCadastro = dataCadastro;
 	}
+	
 
 }

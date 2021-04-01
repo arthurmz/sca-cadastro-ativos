@@ -1,4 +1,4 @@
-package com.sca.cadastroativos.ativo.manutencao.model;
+package com.sca.cadastroativos.model.manutencao;
 
 import java.time.LocalDateTime;
 
@@ -11,7 +11,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import com.sca.cadastroativos.ativo.model.TipoComponenteManutencaoAtivo;
+import com.sca.cadastroativos.model.ativo.TipoComponenteManutencaoAtivo;
 
 /**
  * Informa o periodo de tempo associado a cada componente de ativo passível de manutenção.

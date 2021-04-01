@@ -1,4 +1,4 @@
-package com.sca.cadastroativos.insumo.model;
+package com.sca.cadastroativos.model.insumo;
 
 import java.time.LocalDateTime;
 

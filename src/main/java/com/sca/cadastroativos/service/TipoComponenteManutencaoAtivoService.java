@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.sca.cadastroativos.ativo.model.TipoComponenteManutencaoAtivo;
+import com.sca.cadastroativos.model.ativo.TipoComponenteManutencaoAtivo;
 import com.sca.cadastroativos.repository.TipoComponenteManutencaoAtivoRepository;
 
 

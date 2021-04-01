@@ -1,4 +1,4 @@
-package com.sca.cadastroativos.ativo.model;
+package com.sca.cadastroativos.model.ativo;
 
 import java.time.LocalDateTime;
 
@@ -7,22 +7,33 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+/**
+ * Representa subcomponentes de um tipo de ativo
+ * @author arthur
+ *
+ */
 @Entity
 @Table(schema="sca_cadastro_ativos")
-public class TipoAtivo {
+public class TipoComponenteManutencaoAtivo {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id")
-	public Long id;
+	private Long id;
+	
+	@ManyToOne
+	@JoinColumn(name="id_tipo_ativo")
+	private TipoAtivo tipoAtivo;
 	
 	@Column(name="descricao")
-	public String descricao;
+	private String descricao;
 	
 	@Column(name="data_cadastro")
-	public LocalDateTime dataCadastro;
+	private LocalDateTime dataCadastro;
 
 	public Long getId() {
 		return id;
@@ -30,6 +41,14 @@ public class TipoAtivo {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public TipoAtivo getTipoAtivo() {
+		return tipoAtivo;
+	}
+
+	public void setTipoAtivo(TipoAtivo tipoAtivo) {
+		this.tipoAtivo = tipoAtivo;
 	}
 
 	public String getDescricao() {

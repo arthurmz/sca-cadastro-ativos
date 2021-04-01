@@ -1,4 +1,4 @@
-package com.sca.cadastroativos.insumo.aquisicao;
+package com.sca.cadastroativos.model.aquisicao;
 
 import java.time.LocalDateTime;
 
@@ -13,8 +13,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.sca.cadastroativos.insumo.model.InsumoDisponivel;
-import com.sca.cadastroativos.insumo.model.UnidadeMedida;
+import com.sca.cadastroativos.model.insumo.InsumoDisponivel;
+import com.sca.cadastroativos.model.insumo.UnidadeMedida;
 
 @Entity
 @Table(schema="sca_cadastro_ativos")

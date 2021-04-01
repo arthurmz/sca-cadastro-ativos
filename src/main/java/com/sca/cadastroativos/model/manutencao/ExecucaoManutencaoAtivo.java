@@ -1,4 +1,4 @@
-package com.sca.cadastroativos.ativo.manutencao.model;
+package com.sca.cadastroativos.model.manutencao;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -14,8 +14,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.sca.cadastroativos.ativo.model.Ativo;
-import com.sca.cadastroativos.ativo.model.TipoComponenteManutencaoAtivo;
+import com.sca.cadastroativos.model.ativo.Ativo;
+import com.sca.cadastroativos.model.ativo.TipoComponenteManutencaoAtivo;
 
 @Entity
 @Table(schema="sca_cadastro_ativos")

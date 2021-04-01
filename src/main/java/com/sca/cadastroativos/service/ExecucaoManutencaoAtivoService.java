@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.sca.cadastroativos.ativo.manutencao.model.ExecucaoManutencaoAtivo;
+import com.sca.cadastroativos.model.manutencao.ExecucaoManutencaoAtivo;
 import com.sca.cadastroativos.repository.ExecucaoManutencaoAtivoRepository;
 
 @Service

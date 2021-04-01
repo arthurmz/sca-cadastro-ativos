@@ -1,4 +1,4 @@
-package com.sca.cadastroativos.insumo.model;
+package com.sca.cadastroativos.model.insumo;
 
 public enum UnidadeMedida {
 	METRO,

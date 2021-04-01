@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.sca.cadastroativos.insumo.aquisicao.ConsumoInsumo;
+import com.sca.cadastroativos.model.aquisicao.ConsumoInsumo;
 import com.sca.cadastroativos.repository.ConsumoInsumoRepository;
 
 @Service
